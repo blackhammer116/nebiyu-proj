@@ -1,20 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "./pic/logo2.png";
 import landing from "./landing.css";
 
 export default function Landing() {
   return (
-    <div className="header">
+    <div className="header" id="top">
       <div className="nav-items">
         <div className="logo-name">
-          <img src={logo} className="logo" />
-          {/* <h2>Name</h2> */}
+          {/* <img src={logo} className="logo" /> */}
+          <Link to={"/home"} className="no-decor">
+            <h1>PROJ.NOVA</h1>
+          </Link>
         </div>
         <div className="menu-items">
           <ul>
-            <li>About</li>
-            <li>Services</li>
+            <a href="#about">
+              <li>About</li>
+            </a>
+
+            <a href="#services">
+              <li>Services</li>
+            </a>
             <li>Contact Us</li>
+
             <li>Sign In</li>
           </ul>
         </div>
@@ -27,7 +36,9 @@ export default function Landing() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <button>Read More</button>
+        <a href="#about">
+          <button>Read More</button>
+        </a>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import footer from "./footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container no-decor">
       <h1> PROJ.NOVA</h1>
       <ul>
         <li>
@@ -24,9 +24,15 @@ export default function Footer() {
         </li>
       </ul>
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Services</li>
+        <a href="#top">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About Us</li>
+        </a>
+        <a href="#services">
+          <li>Services</li>
+        </a>
         <li>Contact</li>
       </ul>
 

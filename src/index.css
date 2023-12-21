@@ -5,6 +5,14 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
 
 a {
   text-decoration: none;
@@ -12,4 +20,8 @@ a {
 
 ul {
   list-style: none;
+}
+.no-decor {
+  text-decoration: none;
+  color: white;
 }

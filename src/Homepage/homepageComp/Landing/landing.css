@@ -5,14 +5,14 @@
     url("pic/landing.jpg");
   background-position: center;
   background-size: cover;
-  border-top-left-radius: 405px;
+  border-top-left-radius: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
 }
 .nav-items {
   display: flex;
-  padding: 1%;
+  padding: 2%;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,6 +22,10 @@
   flex-direction: row;
   align-items: center;
   color: white;
+}
+.logo-name h1 {
+  font-weight: lighter;
+  cursor: pointer;
 }
 .logo {
   width: 120px;
@@ -70,11 +74,13 @@
 
 .message h1 {
   font-size: 62px;
+  font-weight: lighter;
 }
 
 .message p {
   margin: 10px 0 40px;
   font-size: 14px;
+  font-weight: lighter;
 }
 
 .message button {

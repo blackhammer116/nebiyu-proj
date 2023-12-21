@@ -4,7 +4,7 @@ import about0 from "./about0.css";
 
 export default function About0() {
   return (
-    <div className="about0-container">
+    <div className="about0-container" id="about">
       <img src={aboutI} />
 
       <div className="about0-description">

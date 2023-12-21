@@ -5,10 +5,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import footer from "./footer.css";
 
-export default function Footer() {
+export default function MFooter() {
   return (
     <div className="footer-container">
-      <h1> PROJ.NOVA</h1>
       <ul>
         <li>
           <FaFacebook size={25} />

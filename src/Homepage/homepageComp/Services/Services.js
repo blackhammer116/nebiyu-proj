@@ -2,10 +2,11 @@ import React from "react";
 import services from "./services.css";
 import folder1 from "./pics/folder1.jpg";
 import msg from "./pics/msg.jpg";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <div className="services-container">
+    <div className="services-container" id="services">
       <div className="services-file">
         <img src={folder1} />
 
@@ -24,7 +25,9 @@ export default function Services() {
             sollicitudin aliquam ultrices. Morbi leo urna molestie at elementum
             eu facilisis sed.
           </p>
-          <button className="services-btn">Try It Out</button>
+          <Link to={"/services"}>
+            <button className="services-btn">Try It Out</button>
+          </Link>
         </div>
       </div>
       <div className="services-msg">
@@ -45,7 +48,9 @@ export default function Services() {
             sollicitudin aliquam ultrices. Morbi leo urna molestie at elementum
             eu facilisis sed.
           </p>
-          <button className="services-btn">Try It Out</button>
+          <Link to={"/services"}>
+            <button className="services-btn">Try It Out</button>
+          </Link>
         </div>
       </div>
     </div>
